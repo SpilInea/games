@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <link rel="icon" href="https://i.ibb.co/tmZVQXW/Spil.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spilinea</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1600px;
+            box-sizing: border-box;
+            position: relative;
+            margin-bottom: 60px;
+            height: calc(100% - 60px);
+        }
+
+        #game {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        iframe {
+            width: 900px;
+            height: 480px;
+            border: none;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .ad-space {
+            width: 150px;
+            height: 100%;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .header {
+            background-color: #aad3ff;
+            color: white;
+            padding: 15px;
+            width: 60%;
+            text-align: center;
+            position: relative;
+            border-radius: 15px;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- Venstre Google Ads område -->
+        <div class="ad-space">
+            Google Ads
+        </div>
+
+        <!-- Spillet -->
+        <div id="game">
+            <h1 class="header top-header">Drunk Drive</h1> <!-- Opdateret overskrift -->
+            <iframe src="https://funhtml5games.com?embed=drunkdrive" style="width:900px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+            <h1 class="header bottom-header">For at spille dette spil skal du klikke for at styre bilen. Pas på at undgå forhindringerne!</h1> <!-- Opdateret tekst -->
+        </div>
+
+        <!-- Højre Google Ads område -->
+        <div class="ad-space">
+            Google Ads
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Spilinea. Alle rettigheder forbeholdes.</p>
+    </footer>
+</body>
+</html>

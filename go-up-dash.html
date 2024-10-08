@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <link rel="icon" href="https://i.ibb.co/tmZVQXW/Spil.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spilinea</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Ændret til kolonne for at placere elementer vertikalt */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            overflow: hidden; /* Forhindrer overløb af indhold */
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1600px;
+            box-sizing: border-box; 
+            position: relative; /* Tilføjet for at håndtere absolut positionering senere */
+            margin-bottom: 60px; /* Giver plads til footeren */
+            height: calc(100% - 60px); /* Holder containeren inden for synligheden minus footeren */
+        }
+
+        #game {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Sørg for at indholdet i game er centreret */
+            position: relative; /* For at placere headerne korrekt */
+            padding: 20px 0; /* Tilføjet polstring for at give afstand over og under */
+        }
+
+        iframe {
+            width: 1000px; /* Justeret bredde til 1000px */
+            height: 800px; /* Justeret højde til 800px */
+            border: none;
+            overflow: hidden;
+            margin: 10px 0; /* Tilføjet margen for afstand til headerne */
+        }
+
+        .ad-space {
+            width: 150px;
+            height: 100%;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .header {
+            background-color: #aad3ff; /* Blå baggrund for overskrifterne */
+            color: white; /* Hvid tekstfarve */
+            padding: 15px; /* Indvendig polstring */
+            width: 60%; /* Gør det til 100% af bredden */
+            text-align: center; /* Centrerer teksten */
+            position: relative; /* Relative position for headerne */
+            border-radius: 15px;
+            margin: 10px 0; /* Tilføjet margen for afstand til iframe */
+        }
+
+        .top-header {
+            /* Ingen specifik stil nødvendig, da vi nu bruger margin */
+        }
+
+        .bottom-header {
+            /* Ingen specifik stil nødvendig, da vi nu bruger margin */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            width: 100%; /* Gør footeren til 100% af bredden */
+            position: relative; /* Relative position for footeren */
+            bottom: 0; /* Holder footeren nederst */
+            margin-top: auto; /* Sikrer at footeren er placeret korrekt */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- Venstre Google Ads område -->
+        <div class="ad-space">
+            Google Ads
+        </div>
+
+        <!-- Spillet -->
+        <div id="game">
+            <h1 class="header top-header">Go Up Dash</h1> <!-- Opdateret overskrift -->
+            <iframe src="https://www.jopi.com/gam/go-up-dash/" frameborder="0" scrolling="no"></iframe>
+            <h1 class="header bottom-header">For at spille dette spil skal du bruge piltasterne. Pas på din lærer ikke ser dig spille i timerne!</h1> <!-- Overskrift efter spillet -->
+        </div>
+
+        <!-- Højre Google Ads område -->
+        <div class="ad-space">
+            Google Ads
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Spilinea. Alle rettigheder forbeholdes.</p>
+    </footer>
+</body>
+</html>
